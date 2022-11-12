@@ -18,7 +18,7 @@ First We use command : iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 1
 
 ![Preview](https://github.com/Vsollery/Jarkom-Modul-3-I03-2022/blob/main/Check-Ostania.jpg)
 
-After that, we move to Wise and use command : echo nameserver 192.168.122.1 > /etc/resolv.conf
+After that, we move to Wise and use command : echo nameserver 192.168.122.1 > /etc/resolv.conf \
 To make sure that the server is match. Then we apt-get update and apt-get install bind9 -y to start the server as DNS.
 
 ![Preview]( https://github.com/Vsollery/Jarkom-Modul-3-I03-2022/blob/main/Updat-Instal-Bind9.jpg)
@@ -27,7 +27,7 @@ We use command 'service bind9 start' to start the domain
 
 ![Preview]( https://github.com/Vsollery/Jarkom-Modul-3-I03-2022/blob/main/Service-Start-Bind.jpg)
 
-We move to Westalis and do the some command 'echo nameserver 192.168.122.1 > /etc/resolv.conf' 'apt-get update'
+We move to Westalis and do the some command 'echo nameserver 192.168.122.1 > /etc/resolv.conf' 'apt-get update' \
 but, in here we instal the dhcp server with command 'apt-get install isc-dhcp-server -y'
 
 ![Preview](https://github.com/Vsollery/Jarkom-Modul-3-I03-2022/blob/main/dhcp-server-install.jpg)
@@ -46,18 +46,18 @@ after that start with command 'service squid start'
 
 ## and Ostania as DHCP Relay (2).
 
--Ostania
+-Ostania \
 Install the dhcp relay with command 'apt-get install isc-dhcp-relay -y' and start the dhcp 'service isc-dhcp-relay start'
 
 ![Preview](https://github.com/Vsollery/Jarkom-Modul-3-I03-2022/blob/main/install-dhcp-relay.jpg)
 ![Preview](https://github.com/Vsollery/Jarkom-Modul-3-I03-2022/blob/main/service-dhcp-relay.jpg)
 
 ## Loid and Franky construct the map carefully and thoroughly.There are several criteria that Loid and Franky want to make, which are:
--All existing clients MUST use the IP configuration from the DHCP Server.
--Client that go through Switch1 have the IP range from [prefix IP].1.50 - [prefix IP].1.88 and [prefix IP].1.120 - [prefix IP].1.155 (3)
+-All existing clients MUST use the IP configuration from the DHCP Server. \
+-Client that go through Switch1 have the IP range from [prefix IP].1.50 - [prefix IP].1.88 and [prefix IP].1.120 - [prefix IP].1.155 (3) \
 -Client that go through Switch3 have the IP range from [prefix IP].3.10 - [prefix IP].3.30 dan [prefix IP].3.60 - [prefix IP].3.85 (4)
 
--Westalis
+-Westalis \
 echo "
 subnet 192.208.1.0 netmask 255.255.255.0 {
     range 192.208.1.50 192.208.1.88;
