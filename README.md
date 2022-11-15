@@ -97,6 +97,9 @@ After use command above, make sure stop the dhcp server and start again to reloa
 ## Question 5 
 > Client gets the DNS from WISE and client can connect to the internet through the DNS. 
 
+Here we set fowarders to DNS server IP address which is WISE
+
+![Preview](https://github.com/Vsollery/Jarkom-Modul-3-I03-2022/blob/main/no5-modul-3.jpg)
 
 
 
