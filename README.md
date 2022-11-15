@@ -94,4 +94,9 @@ After use command above, make sure stop the dhcp server and start again to reloa
 
 ![Preview](https://github.com/Vsollery/Jarkom-Modul-3-I03-2022/blob/main/dhcpd.conf.jpg) 
 
+## Question 5 
+> Client gets the DNS from WISE and client can connect to the internet through the DNS. 
+
+
+
 
