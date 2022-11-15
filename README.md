@@ -142,7 +142,9 @@ Configuration of clients
 
 ## TESTING ON CLIENT
 
-![Preview[(https://github.com/Vsollery/Jarkom-Modul-3-I03-2022/blob/main/testing-sss modul3.jpg)
+![Preview](https://github.com/Vsollery/Jarkom-Modul-3-I03-2022/blob/main/testing-sss-modul%203.jpg)
+
+![Preview](https://github.com/Vsollery/Jarkom-Modul-3-I03-2022/blob/main/testing-ss-modul3.1.jpg)
 
 
 
