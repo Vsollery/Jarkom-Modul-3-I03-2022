@@ -136,7 +136,13 @@ subnet 192.208.3.0 netmask 255.255.255.0 {
 
 ## Configuration of Clients
 
+Configuration of clients
+
+![Preview](https://github.com/Vsollery/Jarkom-Modul-3-I03-2022/blob/main/config-client.jpg)
+
 ## TESTING ON CLIENT
+
+![Preview[(https://github.com/Vsollery/Jarkom-Modul-3-I03-2022/blob/main/testing-sss modul3.jpg)
 
 
 
