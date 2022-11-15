@@ -61,7 +61,7 @@ Loid and Franky construct the map carefully and thoroughly.There are several cri
 -Client that go through Switch1 have the IP range from [prefix IP].1.50 - [prefix IP].1.88 and [prefix IP].1.120 - [prefix IP].1.155 (3) \
 -Client that go through Switch3 have the IP range from [prefix IP].3.10 - [prefix IP].3.30 dan [prefix IP].3.60 - [prefix IP].3.85 (4)
 
-``
+```
 -Westalis \
 echo "
 subnet 192.208.1.0 netmask 255.255.255.0 {
@@ -88,7 +88,7 @@ subnet 192.208.3.0 netmask 255.255.255.0 {
 }
 " > /etc/dhcp/dhcpd.conf
 
-``
+```
 
 After use command above, make sure stop the dhcp server and start again to reload.use command 'service isc-dhcp-server stop' and then 'service isc-dhcp-server start'
 
