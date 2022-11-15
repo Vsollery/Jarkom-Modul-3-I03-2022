@@ -101,5 +101,44 @@ Here we set fowarders to DNS server IP address which is WISE
 
 ![Preview](https://github.com/Vsollery/Jarkom-Modul-3-I03-2022/blob/main/no5-modul-3.jpg)
 
+## Question 6
+
+> The length of time the DHCP server lends an IP address to client via Switch1 is 5 minutes, while the client via Switch3 is 10 minutes. With a maximum time allocated for borrowing an IP address is 115 minute.
+
+Here we change the default-lease time and max lease time according to the problem's criteria. 
+
+```
+echo "
+subnet 192.208.1.0 netmask 255.255.255.0 {
+    range 192.208.1.50 192.208.1.88;
+    range 192.208.1.120 192.208.1.155;
+    option routers 192.208.1.1;
+    option broadcast-address 192.208.1.255;
+    option domain-name-servers 192.208.2.2;
+    default-lease-time 300;
+    max-lease-time 6900;
+}
+
+subnet 192.208.2.0 netmask 255.255.255.0 {
+}
+
+subnet 192.208.3.0 netmask 255.255.255.0 {
+    range 192.208.3.10 192.208.3.30;
+    range 192.208.3.60 192.208.3.85;
+    option routers 192.208.3.1;
+    option broadcast-address 192.208.3.255;
+    option domain-name-servers 192.208.2.2;
+    default-lease-time 600;
+    max-lease-time 6900;
+}
+" > /etc/dhcp/dhcpd.conf
+```
+
+## Configuration of Clients
+
+## TESTING ON CLIENT
+
+
+
 
 
