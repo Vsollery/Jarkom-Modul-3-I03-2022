@@ -11,7 +11,9 @@ Computational Networking Module 3 Practicum Report
 
 ![Preview](https://github.com/Vsollery/Jarkom-Modul-3-I03-2022/blob/main/Topology_Jarkom-Modul3-I03.jpg)
 
-## Loid with Franky plan to create the map above with criteria WISE as DNS Server, Westalis as DHCP Server, Berlint as Proxy Server (1), and Ostania as DHCP Relay (2).
+## Question 1
+
+> Loid with Franky plan to create the map above with criteria WISE as DNS Server, Westalis as DHCP Server, Berlint as Proxy Server (1), and Ostania as DHCP Relay (2).
 
 First We use command : iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 192.208.0.0/16
 .After that we check it with cat /etc/resolv.conf . We use the command in Ostania.
@@ -44,7 +46,8 @@ after that start with command 'service squid start'
 
 ![Preview]( https://github.com/Vsollery/Jarkom-Modul-3-I03-2022/blob/main/service-squid.jpg)
 
-## and Ostania as DHCP Relay (2).
+## QUESTION 2
+> Ostania as DHCP Relay (2).
 
 -Ostania \
 Install the dhcp relay with command 'apt-get install isc-dhcp-relay -y' and start the dhcp 'service isc-dhcp-relay start'
@@ -52,7 +55,8 @@ Install the dhcp relay with command 'apt-get install isc-dhcp-relay -y' and star
 ![Preview](https://github.com/Vsollery/Jarkom-Modul-3-I03-2022/blob/main/install-dhcp-relay.jpg)
 ![Preview](https://github.com/Vsollery/Jarkom-Modul-3-I03-2022/blob/main/service-dhcp-relay.jpg)
 
-## Loid and Franky construct the map carefully and thoroughly.There are several criteria that Loid and Franky want to make, which are:
+##  Question 3 & 4
+Loid and Franky construct the map carefully and thoroughly.There are several criteria that Loid and Franky want to make, which are:
 -All existing clients MUST use the IP configuration from the DHCP Server. \
 -Client that go through Switch1 have the IP range from [prefix IP].1.50 - [prefix IP].1.88 and [prefix IP].1.120 - [prefix IP].1.155 (3) \
 -Client that go through Switch3 have the IP range from [prefix IP].3.10 - [prefix IP].3.30 dan [prefix IP].3.60 - [prefix IP].3.85 (4)
